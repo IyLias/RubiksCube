@@ -56,22 +56,22 @@ int get_side(char side) {
 	switch (side) {
 
 		case 'U':
-			return 0;
+			return UP;
 
 		case 'D':
-			return 1;
+			return DOWN;
 
 		case 'F':
-			return 2;
+			return FRONT;
 
 		case 'B':
-			return 3;
+			return BACK;
 
 		case 'L':
-			return 4;
+			return LEFT;
 
 		case 'R':
-			return 5;
+			return RIGHT;
 
 	}
 
@@ -189,10 +189,6 @@ int main()
 		}
 
 		print_side(UP);
-		/*for (int i = 0; i < 6; i++) {
-			print_side(i);
-			printf("\n");
-		}*/
 		init_cube();
 	}
 
